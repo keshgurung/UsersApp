@@ -3,7 +3,7 @@
 
 ### How to Clone / Open the app
 
-- Goto github link [Planets APP](https://github.com/keshgurung/UsersApp)
+- Goto github link [Users APP](https://github.com/keshgurung/UsersApp)
 - Open terminal, select a place to clone the project eg: cd desktop
 - Use command ``` git clone https://github.com/keshgurung/UsersApp ``` to clone the project locally.
 - Open the project, CLick on the UsersApp.xcodeproj file. The file will open in XCode.
