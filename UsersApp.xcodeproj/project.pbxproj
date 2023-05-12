@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		049638CD2A0CFC6600DD7C61 /* UserEntity+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049638CC2A0CFC6600DD7C61 /* UserEntity+Extension.swift */; };
 		049638D02A0E3D6600DD7C61 /* CacheImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049638CF2A0E3D6600DD7C61 /* CacheImage.swift */; };
-		049638D22A0E3E2600DD7C61 /* UserViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049638D12A0E3E2600DD7C61 /* UserViewCell.swift */; };
 		202722FB2A0BFD5C00D236EA /* MockRestApiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202722FA2A0BFD5C00D236EA /* MockRestApiNetworking.swift */; };
 		202722FF2A0BFDCD00D236EA /* RestApiManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202722FE2A0BFDCD00D236EA /* RestApiManagerTests.swift */; };
 		2043B3692A0ADD6900200F1F /* UsersAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043B3682A0ADD6900200F1F /* UsersAppApp.swift */; };
@@ -35,6 +33,7 @@
 		2043B3DB2A0BB09B00200F1F /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043B3DA2A0BB09B00200F1F /* UserDetailsView.swift */; };
 		2043B3DD2A0BF0ED00200F1F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043B3DC2A0BF0ED00200F1F /* DataController.swift */; };
 		2043B3DF2A0BF2A600200F1F /* OfflineDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043B3DE2A0BF2A600200F1F /* OfflineDataManager.swift */; };
+		20F571B62A0E528C00DEB6CF /* UserEntity+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F571B52A0E528C00DEB6CF /* UserEntity+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		049638CC2A0CFC6600DD7C61 /* UserEntity+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+Extension.swift"; sourceTree = "<group>"; };
 		049638CF2A0E3D6600DD7C61 /* CacheImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheImage.swift; sourceTree = "<group>"; };
-		049638D12A0E3E2600DD7C61 /* UserViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewCell.swift; sourceTree = "<group>"; };
 		202722FA2A0BFD5C00D236EA /* MockRestApiNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRestApiNetworking.swift; sourceTree = "<group>"; };
 		202722FE2A0BFDCD00D236EA /* RestApiManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiManagerTests.swift; sourceTree = "<group>"; };
 		2043B3652A0ADD6900200F1F /* UsersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +83,7 @@
 		2043B3DA2A0BB09B00200F1F /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 		2043B3DC2A0BF0ED00200F1F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		2043B3DE2A0BF2A600200F1F /* OfflineDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDataManager.swift; sourceTree = "<group>"; };
+		20F571B52A0E528C00DEB6CF /* UserEntity+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UserEntity+Extension.swift"; path = "../../../Demo/UsersApp/UsersApp/CoreData/UserEntity+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,21 +126,6 @@
 				202722FE2A0BFDCD00D236EA /* RestApiManagerTests.swift */,
 			);
 			path = ServiceTests;
-			sourceTree = "<group>";
-		};
-		202722F82A0BFD2E00D236EA /* RepositoryTests */ = {
-			isa = PBXGroup;
-			children = (
-				202722F92A0BFD3900D236EA /* MockJSON */,
-			);
-			path = RepositoryTests;
-			sourceTree = "<group>";
-		};
-		202722F92A0BFD3900D236EA /* MockJSON */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MockJSON;
 			sourceTree = "<group>";
 		};
 		2043B35C2A0ADD6900200F1F = {
@@ -193,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				202722F72A0BFD1A00D236EA /* ServiceTests */,
-				202722F82A0BFD2E00D236EA /* RepositoryTests */,
 				2043B37E2A0ADD6A00200F1F /* UsersAppTests.swift */,
 			);
 			path = UsersAppTests;
@@ -237,7 +219,7 @@
 			children = (
 				2043B3DC2A0BF0ED00200F1F /* DataController.swift */,
 				2043B3732A0ADD6A00200F1F /* UsersApp.xcdatamodeld */,
-				049638CC2A0CFC6600DD7C61 /* UserEntity+Extension.swift */,
+				20F571B52A0E528C00DEB6CF /* UserEntity+Extension.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -256,7 +238,6 @@
 				2043B3B42A0AF9B900200F1F /* UsersListView.swift */,
 				2043B3D82A0BB02500200F1F /* UserView.swift */,
 				2043B3DA2A0BB09B00200F1F /* UserDetailsView.swift */,
-				049638D12A0E3E2600DD7C61 /* UserViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -419,11 +400,10 @@
 				2043B3B52A0AF9B900200F1F /* UsersListView.swift in Sources */,
 				2043B3DF2A0BF2A600200F1F /* OfflineDataManager.swift in Sources */,
 				049638D02A0E3D6600DD7C61 /* CacheImage.swift in Sources */,
+				20F571B62A0E528C00DEB6CF /* UserEntity+Extension.swift in Sources */,
 				2043B3DD2A0BF0ED00200F1F /* DataController.swift in Sources */,
-				049638CD2A0CFC6600DD7C61 /* UserEntity+Extension.swift in Sources */,
 				2043B3B12A0AEB4E00200F1F /* UsersRepository.swift in Sources */,
 				2043B3A52A0AE73600200F1F /* JsonDecoder.swift in Sources */,
-				049638D22A0E3E2600DD7C61 /* UserViewCell.swift in Sources */,
 				2043B39E2A0ADF4F00200F1F /* UserModel.swift in Sources */,
 				2043B3D92A0BB02500200F1F /* UserView.swift in Sources */,
 				2043B3692A0ADD6900200F1F /* UsersAppApp.swift in Sources */,
