@@ -23,7 +23,7 @@ struct User: Decodable, Identifiable {
 
 extension User {
     static func mockUser() -> User {
-        return User(id: 1, name: "Mark", avatarUrl: "mark@url", company: "markCompany", email: "mark@email.com", twitterUsername: "mark123")
+        return User(id: 1, name: "Tom Preston-Werner", avatarUrl: "mark@url", company: "markCompany", email: "mark@email.com", twitterUsername: "mark123")
     }
 }
 

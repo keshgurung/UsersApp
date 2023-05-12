@@ -34,6 +34,9 @@
 		2043B3DD2A0BF0ED00200F1F /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043B3DC2A0BF0ED00200F1F /* DataController.swift */; };
 		2043B3DF2A0BF2A600200F1F /* OfflineDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043B3DE2A0BF2A600200F1F /* OfflineDataManager.swift */; };
 		20F571B62A0E528C00DEB6CF /* UserEntity+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F571B52A0E528C00DEB6CF /* UserEntity+Extension.swift */; };
+		20F571BB2A0E610400DEB6CF /* UserViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F571BA2A0E610400DEB6CF /* UserViewModelTest.swift */; };
+		20F571BD2A0E61B900DEB6CF /* MockUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F571BC2A0E61B900DEB6CF /* MockUserRepository.swift */; };
+		20F571C02A0E62F100DEB6CF /* UserAPIResponseData.json in Resources */ = {isa = PBXBuildFile; fileRef = 20F571BF2A0E62F100DEB6CF /* UserAPIResponseData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,9 @@
 		2043B3DC2A0BF0ED00200F1F /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		2043B3DE2A0BF2A600200F1F /* OfflineDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDataManager.swift; sourceTree = "<group>"; };
 		20F571B52A0E528C00DEB6CF /* UserEntity+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UserEntity+Extension.swift"; path = "../../../Demo/UsersApp/UsersApp/CoreData/UserEntity+Extension.swift"; sourceTree = "<group>"; };
+		20F571BA2A0E610400DEB6CF /* UserViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModelTest.swift; sourceTree = "<group>"; };
+		20F571BC2A0E61B900DEB6CF /* MockUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRepository.swift; sourceTree = "<group>"; };
+		20F571BF2A0E62F100DEB6CF /* UserAPIResponseData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserAPIResponseData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +181,7 @@
 		2043B37D2A0ADD6A00200F1F /* UsersAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				20F571B72A0E603200DEB6CF /* ViewModelTests */,
 				202722F72A0BFD1A00D236EA /* ServiceTests */,
 				2043B37E2A0ADD6A00200F1F /* UsersAppTests.swift */,
 			);
@@ -257,6 +264,24 @@
 				2043B3A22A0AE71B00200F1F /* UsersRequest.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		20F571B72A0E603200DEB6CF /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				20F571BE2A0E62C800DEB6CF /* MockJSON */,
+				20F571BA2A0E610400DEB6CF /* UserViewModelTest.swift */,
+				20F571BC2A0E61B900DEB6CF /* MockUserRepository.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		20F571BE2A0E62C800DEB6CF /* MockJSON */ = {
+			isa = PBXGroup;
+			children = (
+				20F571BF2A0E62F100DEB6CF /* UserAPIResponseData.json */,
+			);
+			path = MockJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F571C02A0E62F100DEB6CF /* UserAPIResponseData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +442,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F571BD2A0E61B900DEB6CF /* MockUserRepository.swift in Sources */,
+				20F571BB2A0E610400DEB6CF /* UserViewModelTest.swift in Sources */,
 				202722FB2A0BFD5C00D236EA /* MockRestApiNetworking.swift in Sources */,
 				202722FF2A0BFDCD00D236EA /* RestApiManagerTests.swift in Sources */,
 				2043B37F2A0ADD6A00200F1F /* UsersAppTests.swift in Sources */,
