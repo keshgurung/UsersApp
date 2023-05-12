@@ -21,11 +21,10 @@ final class RestApiManagerTests: XCTestCase {
         mockRestAPIManager = nil
         serviceManager = nil
     }
-    //when API is successful, get function will return expected data,
     
-    func testGetPlanetListWhenResponseIs_200() async {
+    //when API is successful, get function will return expected data,
+    func testGetUserListWhenResponseIs_200() async {
         // reading local json file data
-      
          let data = "response".data(using: .utf8)
         mockRestAPIManager.mockData = data
         mockRestAPIManager.mockResponse = HTTPURLResponse(url:URL(string: "test")!, statusCode: 200, httpVersion:nil, headerFields:nil)
@@ -34,42 +33,35 @@ final class RestApiManagerTests: XCTestCase {
     }
     
     //when API is fails with 404 response code
-    
-    func testGetPlanetListWhenResponseIs404() async {
+    func testGetUserListWhenResponseIs404() async {
         // reading local json file data
-      
          let data = "response".data(using: .utf8)
         mockRestAPIManager.mockData = data
         mockRestAPIManager.mockResponse = HTTPURLResponse(url:URL(string: "test")!, statusCode: 404, httpVersion:nil, headerFields:nil)
-        
         do {
             _ = try await serviceManager.get(request: UsersRequest(path:"test"))
         } catch {
             XCTAssertEqual(error as! RestApiCallError, RestApiCallError.invalidResponse)
         }
-        
     }
     
     //when API is fails with response code other than 200 to 299
     
-    func testGetPlanetListWhenResponseIs502() async {
+    func testGetUserListWhenResponseIs502() async {
         // reading local json file data
-      
          let data = "response".data(using: .utf8)
         mockRestAPIManager.mockData = data
         mockRestAPIManager.mockResponse = HTTPURLResponse(url:URL(string: "test")!, statusCode: 502, httpVersion:nil, headerFields:nil)
-        
         do {
             _ = try await serviceManager.get(request: UsersRequest(path:"test"))
         } catch {
             XCTAssertEqual(error as! RestApiCallError, RestApiCallError.invalidResponse)
         }
-        
     }
     
     //when API is fails with request invalid
 
-    func testGetPlanetListWhenRequestIsNotValid() async {
+    func testGetUserListWhenRequestIsNotValid() async {
         do {
             _ = try await serviceManager.get(request: UsersRequest(path:""))
         } catch {
